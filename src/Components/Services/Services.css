@@ -1,0 +1,338 @@
+.services-display-banner-con{
+    position: relative;
+    background-color: #efefef;
+    
+}
+
+.all-services-provide-display-banner-two{
+    position:relative ;
+    background-color:#EFEFEF;
+}
+
+.all-services-boxes-comes-here{
+    
+    position: absolute;
+    left: 50%;
+    top: -170px;
+    transform: translate(-50%,0%);
+    padding-left: 30px;
+    padding-right: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute; */
+    /* bottom: -100px; */
+    /* left: 50%; */
+    /* transform: translate(-50%,-90%); */
+    gap: 30px;
+    
+}
+
+.all-services-boxes-comes-here>div{
+    min-width: 300px;
+    height: 250px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+
+.all-service-box1>div{
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.all-service-box1>img{
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+.all-service-box1>p{
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom:0px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.all-service-box1>h2{
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom:0px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+
+
+
+.all-services-provide-display-banner{
+    min-height: 450px;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../Assets/careservices.jpg'); */
+    background-image: url('../../Assets/community.jpg');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services-con{
+    min-height: 100vh;
+    background-color: #EFEFEF;
+    padding-top: 70px;
+}
+
+.services-divs{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.services-divs-one{
+    background-color: transparent;
+    width: 100%;
+    min-height: 120vh;
+    border-radius: 5px;
+}
+
+ .services-divs-two{
+    background-color:transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 290px;
+    width: 290px;
+    border-radius: 5px;
+    height: fit-content;
+    position: sticky;
+    top: 80px;
+    /* box-shadow: -1px 3px 24px 1px rgba(224,224,224,1); */
+    overflow: hidden;
+}
+
+.services-message-cards{
+    background-color: white;
+    padding: 10px;
+    box-shadow: -1px 3px 24px 1px rgba(224,224,224,1);
+    border-radius: 5px;
+}
+
+.servi-img-name-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.servi-img-name-div>h1{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.services-message-cards-img{
+    min-width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.services-message-cards-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.services-message-cards-para>p{
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+
+/*services-filter-location  */
+
+.services-filter-location-con{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+}
+.services-filter-location{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    /* justify-content: flex-end; */
+    gap: 3px;
+    padding-top: 15px;
+    /* padding-right: 15px; */
+}
+
+.services-filter-location>label{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: black;
+}
+
+.services-filter-location>select{
+    height: 35px;
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    outline: none;
+}
+
+/* allservices-each-div */
+.allservices-all-services{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+.allservices-each-div{
+    width: 100%;
+    background-color: white;
+    min-height: 100px;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+/* servies-card-top-header */
+
+.service-card-first-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.servies-card-top-header{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    gap: 10px;
+}
+
+.servies-card-top-header>div{
+    display: flex;
+    flex-direction:column;
+    gap: 1px;
+}
+
+.servies-card-top-header>div h1{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.servies-card-top-header>div p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.servies-card-top-header>div p span{
+    color: black;
+    font-weight: 500;
+}
+
+/* required-services */
+.required-services-first{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.required-services-first>h1{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 0;
+}
+
+.required-services-first>p{
+    font-size: 0.85rem;
+    text-transform: capitalize;
+}
+
+.allservices-accept-button>button{
+    border: none;
+    padding: 8px 16px;
+    background-color: blue;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.allservices-accept-button>button:hover{
+    background-color: rgb(0, 0, 211);
+    cursor: pointer;
+}
+
+/* services-freetime-enddate */
+.services-freetime-enddate{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 5px;
+}
+.services-freetime-enddate>p{
+    font-size: 0.8rem;
+    text-transform: capitalize;
+    color: gray;
+}
+
+.services-freetime-enddate>p span{
+    color: black;
+    font-weight: 500;
+}
+
+@media all and (max-width:976px){
+    .services-con{
+        padding-top: 10px;
+    }
+    .all-services-boxes-comes-here{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 20px;
+        
+    }
+}
+
+@media all and (max-width:865px){
+    .services-divs-two{
+        display: none;
+    }
+}
