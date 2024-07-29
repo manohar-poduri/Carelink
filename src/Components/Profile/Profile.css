@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.profile{
+    width: 100%;
+    margin: 0px auto;
+
+    background-color: #efefef;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.75);
+}
+.profile-image{
+    width: 100%;
+    margin: 0px auto;
+}
+.profile-image .bannerimg{
+    width: 100%;
+    height: 300px;
+}
+.profile-image .bannerimg img{
+    width: 100%;
+    height: 300px;
+}
+.profile-image .profileimg{
+    position: relative;
+    left: 0;
+}
+.profile-image .profileimg img{
+    border: 5px solid grey;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 10px;
+    background-color: white;
+
+
+    position: absolute;
+    top: -50px;
+    left: 50%;
+
+    transform: translate(-55%, -50%);
+}
+.profile-content{
+    padding: 32px;
+    /* border-bottom: 1px solid black; */
+
+    background-color: #fff;
+
+    
+}
+.profile-content .profile-content1{
+    padding: 20px;
+    /* display: block; */
+    position: absolute;
+    right: 0;
+}
+.profile-content .profile-content1 h1{
+    letter-spacing: 3px;
+    font-weight: 500;
+    color: black;
+
+    position: absolute;
+    right: 10px;
+    top: -20px;
+}
+.profile-content .profile-content1 h1 a{
+    text-decoration: none;
+    color: black;
+}
+.profile-content .profileName h1{
+    text-align: center;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    padding: 5px;
+
+}
+.profile-content .profileServiceName h1{
+    text-align: center;
+
+    font-size: 0.8rem;
+    font-weight: 400;
+
+}
+.profile-content .profileServiceName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-content .profileServiceName p{
+    padding: 10px;
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+}
+
+.profile-content .profileServiceLocation div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-content .profileServiceLocation div i{
+    padding: 0px 10px;
+    font-size: 0.8rem;
+    margin-left: 20px;
+
+    opacity: 0.8;
+}
+.profile-content .profileServiceLocation div p{
+    font-size: 0.8rem;
+}
+
+
+/* feedback css start  */
+.feedbackHeading{
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+}
+.feedback{
+    margin: 10px auto;
+    margin-bottom: 0px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+
+    /* border-bottom: 1px solid black; */
+    
+}
+.feedback .feedback-card{
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    transition: all 0.4s ease;
+}
+.feedback .feedback-card:hover{
+    /* box-shadow: 0px 0px 5px 1px black; */
+    transform: scale(1.015);
+}
+.feedback .feedback-card .feedbackhead{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #59515E;
+    color: white;
+    overflow: hidden;
+
+    transition: all 0.4s ease;
+}
+.feedback .feedback-card .feedbackhead:hover{
+    transform: scale(1.015);
+    
+}
+.feedback .feedback-card .feedbackhead img{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+}
+.feedback .feedback-card .feedbackhead h1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.feedback .feedback-card .feedbackhead .feedback-rating h1{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.feedback .feedback-card .feedbackhead .feedback-rating p{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.feedback .feedback-card .feedbackbody{
+    padding: 10px;
+    /* border: 1px solid black; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: white;
+}
+.feedback .feedback-card .feedbackbody p{
+    font-size: 0.8rem;
+}
+
+/* editing-the-profile-data */
+.editing-the-profile-data{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.editing-the-profile-data>h1{
+    cursor: pointer;
+}
+@media only screen and (max-width: 800px) {
+    .feedback{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .feedback .feedback-card{
+        width: 80%;
+    }
+  }
+/* feedback css end */
+
+/* blogs css start  */
+.Blogsheading{
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    background-color: #fff;
+}
+.blogsSection{
+    /* margin: 10px auto; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+
+    background-color: #fff;
+
+    border-bottom: 1px solid black;
+}
+.blogsSection .blogcard{
+    width: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+    /* box-shadow: 0px 0px 6px 2px black; */
+
+    transition: all 0.5s ease;
+}
+/* .blogsSection .blogcard:hover{
+    transform: scale(1.015);
+
+} */
+.blogsSection .blogcard .bloghead{
+    width: 100%;
+    /* padding: 10px; */
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #59515E;
+    color: white;
+
+    transition: all 0.4s ease;
+}
+/* .blogsSection .blogcard .bloghead:hover{
+    transform: scale(1.015);
+} */
+.blogsSection .blogcard .bloghead img{
+    width: 100%;
+
+    /* border-radius: 20%; */
+}
+.blogsSection .blog-label{
+    float: right;
+    margin: 15px 0px;
+    margin-right: 10px;
+    border-radius: 25% 10%;
+    background-color: #36AAFA;
+    
+
+}
+.blogsSection .blog-label p a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+}
+.blogsSection .blogcard .blog-card-body{
+    padding: 10px;
+    text-align: center;
+    background-color: #efefef;
+}
+.blogsSection .blogcard .blog-card-body h1{
+    text-align: start;
+    width: 90%;
+
+    font-size: 1rem;
+    
+}
+.blogsSection .blogcard .blog-card-body p{
+    text-align: justify;
+    padding: 10px;
+    height: 100px;
+    overflow: hidden;
+
+    font-size: 0.8rem;
+}
+.blogsSection .blogcard .blog-card-body button{
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0073cf;
+    transition: all 0.4s ease;
+}
+.blogsSection .blogcard .blog-card-body button a{
+    padding: 10px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
+
+    transition: all 0.4s ease;
+}
+.blogsSection .blogcard .blog-card-body button a:hover{
+    color: white;
+}
+.blogsSection .blogcard .blog-card-body button:hover{
+    background-color: #4169e1;
+    color: white;
+}
+
+/* editing-the-profile-data */
+.editing-the-profile-data>p{
+    padding: 10px 20px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    background-color: purple;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 800px){
+    .blogsSection{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .blogsSection .blogcard{
+        width: 80%;
+    }
+}
+/* blogs css end */
