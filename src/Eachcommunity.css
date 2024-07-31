@@ -1,0 +1,127 @@
+.eachcommunity-con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.eachcommunity-inner-con{
+    width: 1100px;
+    min-height: 150px;
+    background-color: #efefef;
+    padding: 30px;
+}
+
+.eachcommunity-inner-view-topic-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.eachcommunity-inner-view-name-dtl>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.eachcommunity-inner-view-name-dtl>p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: white;
+    background-color: rgb(147, 0, 184);
+    padding: 5px 14px;
+    min-width: 200px;
+    margin-top: 5px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.eachcommunity-inner-view-name-dtl>div h1{
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+
+.eachcommunity-inner-view-name-dtl>div p{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: gray;
+}
+
+/* eachcommunity-inner-descripiton-topic */
+.eachcommunity-inner-descripiton-topic{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.eachcommunity-inner-descripiton-topic>h1{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.eachcommunity-inner-descripiton-topic>p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+
+/* eachcomm-add-your */
+.eachcomm-add-your{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 5px;
+}
+.eachcomm-add-your>label{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+}
+.eachcomm-add-your>textarea{
+    padding: 5px;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 60px;
+    outline: none;
+    border: 1px solid gray;
+}
+
+.eachcomm-add-your>button{
+    padding: 5px 15px;
+    width: fit-content;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+/* eachcomm-comments-header */
+.eachcomm-comments-header{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.eachcomm-comments-header>h1{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* eachcomm-all-comments-dis */
+.eachcomm-all-comments-dis{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.eachcomm-all-comments-dis>div{
+    width: 100%;
+    min-height: fit-content;
+    padding:10px;
+    background-color: white;
+    border-radius: 5px;
+
+}
