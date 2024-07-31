@@ -1,0 +1,217 @@
+.find-care-services-banner{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../Assets/groupcaretaker.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.find-care-services-banner>div{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.find-care-services-banner>div h1{
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 187, 0);
+}
+
+.find-care-services-banner>div p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.find-care-services-banner>div h2{
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: rgb(112, 255, 107);
+}
+
+/* findcareservices-con */
+.findcareservices-con{
+    min-height: 100vh;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right: 30px;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+/* findcareservices-display-div */
+.findcareservices-display-div{
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.findcare-serv-header>h1{
+    font-size: 1.5rem;
+    padding: 20px;
+    font-weight: 600;
+}
+
+/* findcare-services-filter-box */
+.findcare-services-filter-box{
+    min-width: 300px;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    position: sticky;
+    top: 70px;
+
+}
+
+.findcare-services-filter-box>p{
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.findcare-services-filter-box>div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 7px;
+}
+
+.findcare-services-filter-box>div label{
+    font-size: 0.95rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.findcare-services-filter-box>div select{
+    height: 35px;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 3px;
+}
+
+/* findcareservice-each-display */
+.findcareservice-each-display{
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid #efefef;
+    margin: 10px;
+    border-radius: 5px;
+}
+.findcareservice-each-display-first{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #efefef;
+}
+.findcareservice-each-display-first-first{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+.findcareservice-each-display-first-first>div h1{
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.findcareservice-each-display-first-first>div p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: gray;
+}
+.findcareservice-each-display-second{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+.findcareservice-each-display-second-first{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.findcareservice-each-display-second-first>h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.findcareservice-each-display-second-first>p{
+    background-color: rgb(209, 49, 161);
+    width: fit-content;
+    color: white;
+    font-weight: 500;
+    font-size: 0.85rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+.findcareservice-each-display-second-first>h3{
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: rgb(105, 105, 105);
+}
+.findcareservice-each-display-second-second{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.findcareservice-each-display-second-second>p{
+    font-size: 0.95rem;
+    color: gray;
+}
+.findcareservice-each-display-second-second>button{
+    padding: 7px 14px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+}
+
+/* findcareservice-each-display-second-second */
+.findcareservice-each-display-second-second>h2{
+    background-color: rgb(226, 226, 226);
+    color: black;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 7px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media all and (max-width:800px){
+    .findcareservices-con{
+        display: flex;
+        flex-direction: column-reverse;
+        row-gap: 10px;
+        color: 10px;
+    }
+    .findcare-services-filter-box{
+        position: relative;
+        top: 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .findcare-services-filter-box>p{
+        display: none;
+    }
+    
+}
