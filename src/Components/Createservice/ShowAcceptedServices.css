@@ -1,0 +1,266 @@
+.showacceptedservice-inactive{
+    filter: blur(10px);
+    pointer-events:none;
+    user-select:none
+}
+.show-accepted-services-banner{
+    min-height: 450px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../Assets/acceptedservices.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-accepted-services-banner>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+}
+
+.show-accepted-services-banner>div h1{
+    color: rgb(255, 187, 0);
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/*showaccepted-services-header  */
+.showaccepted-services-header{
+    padding-left: 30px;
+    padding-top: 20px;
+    background-color: #efefef;
+}
+.showaccepted-services-header>h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+/* showacceptedbtn-completed */
+.showacceptedbtn-completed>button{
+    background-color: green;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* pop up card css */
+.show-accepted-compopup-active{
+    width: 350px;
+    min-height: fit-content;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity:1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.show-accepted-compopup-inactive{
+    width: 350px;
+    min-height: fit-content;
+    padding: 20px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity:0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* show-accpt-popup-close */
+.show-accpt-popup-close{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.show-accpt-popup-close>h3{
+    background-color: rgb(248, 248, 248);
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.show-accepted-compopup-active>h1 , .show-accepted-compopup-inactive>h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.show-accepted-compopup-active>p , .show-accepted-compopup-inactive>p{
+    font-size: 0.9rem;
+    font-weight: 500;margin-bottom: 5px;
+    text-align: center;
+}
+
+.show-accepted-compopup-active>input , .show-accepted-compopup-inactive>input{
+    height: 35px;
+    text-align: center;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 3px;
+    outline: none;
+}
+
+.show-accepted-compopup-active>button, .show-accepted-compopup-inactive>button{
+    border: none;
+    background-color: rgb(0, 0, 235);
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 4px;
+}
+/* successfully-completed-btn */
+.successfully-completed-btn>button{
+    padding: 7px 14px;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: green;
+    border: none;
+}
+
+.show-all-accepted-servces-each-div{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid green;
+    min-height: 100px;
+    border-radius: 5px;
+    padding: 30px;
+}
+/* showcreateservice-popup-active */
+
+.showcreateservice-popup-active{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    width: 400px;
+    min-height: 200px;
+    height: fit-content;
+    background-color: white;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.showcreateservice-popup-inactive{
+    border-radius: 4px;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    width: 400px;
+    min-height: 200px;
+    height: fit-content;
+    background-color: white;
+    border: 1px solid rgb(167, 167, 167);
+    opacity: 0;
+    visibility: hidden;
+    padding: 20px;
+}
+
+/* showcreate-feedback-cross-btn */
+.showcreate-feedback-cross-btn{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: flex-end;
+}
+.showcreate-feedback-cross-btn>p{
+    background-color: rgb(228, 228, 228);
+    padding: 5px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.showcreate-feedback-head{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.showcreate-feedback-head>h1{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.showcreate-feedback-head>div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.showcreate-feedback-head>div label{
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: gray;
+}
+.showcreate-feedback-head>div select{
+    height: 35px;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 4px;
+}
+.showcreate-feedback-head>div textarea{
+    min-height: 150px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+    resize: vertical;
+    outline: none;
+}
+.showcreate-feedback-head-btn{
+    background-color: blue;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+}
+
+/* showcreated-service-stars-show */
+.showcreated-service-stars-show{
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+.showcreated-service-stars-show-span{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(255, 51, 0);
+}

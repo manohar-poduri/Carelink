@@ -1,0 +1,115 @@
+.login-con{
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-card{
+    width:800px;
+    min-height: 150px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.login-card div:nth-child(1){
+    width: 100%;
+    height: 100%;
+}
+.login-card>div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.login-card div:nth-child(2){
+    background-color: white;
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-form>h1{
+    text-align: center;
+    font-family: 'poppins';
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login-form>div{
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.login-form>div h2{
+    font-size: 0.9rem;
+    font-family: 'poppins';
+    font-weight: 400;
+}
+.login-form>div input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.login-form>button{
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: white;
+    background-color: blue;
+    margin-top: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.login-form>button:hover{
+    background-color: rgb(33, 33, 255);
+}
+
+.register-login-btn{
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+}
+.register-login-btn>span{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media all and (max-width:800px){
+    .login-card{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    .login-card div:nth-child(1){
+        background-color: red;
+        display: none;
+    }
+}
+
+@media all and (max-width:500px){
+    .login-card{
+        width: 98%;
+    }
+}
