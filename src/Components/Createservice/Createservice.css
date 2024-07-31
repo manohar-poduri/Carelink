@@ -1,0 +1,118 @@
+.createservice-con{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    background: url('../../Assets/createservice.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.createservice-form{
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 17px -4px rgba(230,230,230,1);
+}
+
+.createservice-form>form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.createservice-form>h1{
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 10px;
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+    color: rgb(255, 145, 0);
+}
+
+.createservice-form>form div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.createservice-form>form div label{
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.createservice-form>form div label span{
+    color: red;
+}
+
+.createservice-form>form div select, .createservice-form>form div input{
+    height: 40px;
+    outline: none;
+    padding-left: 5px;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 5px;
+}
+
+.createservice-form>form button{
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+
+.createservice-form>form button:hover{
+    background-color: rgb(38, 38, 250);
+    cursor: pointer;
+}
+
+.createservice-form>form div textarea{
+    min-height: 60px;
+    resize: vertical;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    outline: none;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.createservices-see-services-btn{
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.createservices-see-services-btn>span{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.createservices-see-services-btn>span:hover{
+    color: red;
+}
+
+
+
+@media all and (max-width:505.1234px){
+    .createservice-form{
+        width: 95%;
+    }
+}
