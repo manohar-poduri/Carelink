@@ -1,0 +1,80 @@
+.register-form>h1{
+    text-align: center;
+    font-family: 'poppins';
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.register-form{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.register-form>button{
+    padding: 7px 14px;
+    border: none;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    color: white;
+    background-color: blue;
+    margin-top: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.register-form>div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+.register-form>div label{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.register-form>div select{
+    height: 35px;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    
+
+}
+
+.regform-inner-div{
+    margin-top: 4px;
+}
+
+.regform-inner-div>div{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.regform-inner-div>div label{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.regform-inner-div>div select{
+    height: 35px;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    
+}
+
+.regform-inner-div>div input{
+    height: 35px;
+    padding-left: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    
+}

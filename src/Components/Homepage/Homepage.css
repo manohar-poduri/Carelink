@@ -1,0 +1,425 @@
+/* video css  */
+.video-container{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.video-container>img{
+    width: 100%;
+    height: 100%;
+    object-fit: 'cover';
+    opacity: 0.7;
+}
+
+.video-tag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    opacity: 0.55;
+    
+}
+.video-tag>video{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+}
+
+.video-container>div{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.video-container>div h1{
+    font-size: 3.4rem;
+    font-family: 'poppins';
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 187, 0);
+}
+
+.video-container>div p{
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'poppins';
+}
+
+.video-container>div p:nth-child(2){
+    font-style: italic;
+    font-family: 'poppins';
+    text-transform: capitalize;
+}
+
+/* know morw about css */
+.know-more-about-con{
+    padding: 30px;
+}
+.know-more-about-con>h1{
+    font-size: 1.4rem;
+    font-family: 'poppins';
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.know-more-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.know-more-about>div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.know-more-about>div h1{
+    font-size: 1.3rem;
+    font-family: 'poppins';
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.know-more-about>div p{
+    font-family: 'poppins';
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.know-more-about>div button{
+    width: fit-content;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: 'poppins';
+    cursor: pointer;
+}
+
+.know-more-about-img{
+    width: 100%;
+    height: 100%;
+}
+
+.know-more-about-img>img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+
+.caregiversCTA {
+    padding: 30px;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    /* Hide any overflow */
+    position: relative;
+    background-image: url('./Support\ Givers.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the last value (0.5) to set the opacity (0 is fully transparent, 1 is fully opaque) */
+    background-blend-mode: overlay;
+    background-position: right;
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.caregiversCTA h1 {
+    color: rgb(255, 187, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.6rem;
+    font-family: "poppins", sans-serif;
+
+    padding: 20px;
+}
+
+.caregiversCTA p {
+    font-family: "poppins", sans-serif;
+    font-size: 1rem;
+    padding: 20px;
+    margin: 20px 0px;
+    color: #fff;
+
+    width: 50%;
+}
+
+.caregiversCTA button {
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 0px solid black;
+    margin: 20px;
+    margin-bottom: 40px;
+
+    background-color: #28CEE7;
+    transition: all 0.5s ease;
+}
+
+.caregiversCTA button a {
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    /* letter-spacing: 1px; */
+
+    color: black;
+
+    text-decoration: none;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.caregiversCTA button:hover {
+    color: rgb(255, 187, 0);
+    background-color:transparent;
+    border: 0.5px solid white;
+}
+
+.caregiversCTA button a:hover {
+    color: rgb(255, 187, 0);
+}
+
+.ServiceProviderHome{
+    width: 100%;
+
+    background-color: #efefef;
+    
+}
+.ServiceProviderHome .headingServiceHome{
+    width: 100%;
+}
+.ServiceProviderHome .headingServiceHome h1{
+    font-size: 2rem;
+    margin: 10px auto;
+    margin-top: 0px;
+    padding: 10px;
+    text-align: center;
+}
+.ServiceProviderHome .headingServiceHome p{
+    font-size: 1rem;
+    margin: 10px auto;
+    padding: 30px;
+}
+.ServiceProviderHome .headingServiceHome button{
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    border: 0px solid black;
+
+    background-color: #28CEE7;
+    transition: all 0.5s ease;
+}
+.ServiceProviderHome .headingServiceHome button:hover{
+    background-color: #6AE5F5;
+}
+.ServiceProviderHome .headingServiceHome button a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: "poppins",sans-serif;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.ServiceProviderHome .headingServiceHome button a:hover{
+    color: black;
+}
+.ServiceProviderHome .sericeHomeImage{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ServiceProviderHome .sericeHomeImage img{
+    width: 30%;
+    margin: 20px;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 1200px){
+    .ServiceProviderHome .sericeHomeImage img{
+        width: 45%;
+        margin: 20px;
+    }
+
+}
+@media only screen and (max-width: 800px){
+    .ServiceProviderHome .sericeHomeImage{
+        flex-direction: column;
+    }
+    .ServiceProviderHome .sericeHomeImage img{
+        width: 90%;
+        margin: 20px;
+    }
+
+}
+
+/* care givers section css sart  */
+.caregivers{
+    width: 100%;
+    /* border: 1px solid black; */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.caregivers .caregiversContent{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.caregivers .caregiversContent h1{
+    font-size: 1.5rem;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+.caregivers .caregiversContent p{
+    font-size: 0.9rem;
+    margin: 10px auto;
+    padding: 20px;
+}
+.caregivers .caregiversContent button{
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    /* position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
+    border-radius: 20px;
+    border: 0px solid black;
+
+    background-color: #28CEE7;
+    transition: all 0.5s ease;
+}
+.caregivers .caregiversContent button:hover{
+    background-color: #6AE5F5;
+}
+.caregivers .caregiversContent button a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-family: "poppins",sans-serif;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.caregivers .caregiversContent button a:hover{
+    color: black;
+}
+.caregivers .caregiversImg{
+    width: 50%;
+}
+.caregivers .caregiversImg img{
+    width: 100%;
+    display: flex;
+
+}
+
+.increasegaptopbottom{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media only screen and (max-width: 1000px){
+    .caregivers{
+        flex-direction: column-reverse;
+    }
+    .caregivers .caregiversContent{
+        width: 90%;
+    }
+    .caregivers .caregiversImg{
+        width: 90%;
+    }
+
+}
+/* care givers section css end */
+
+@media only screen and (max-width: 1250px) {
+    .caregiversCTA {
+        height: 500px;
+        object-fit: cover;
+        object-position: right;
+        background-position: right;
+    }
+
+    .caregiversCTA h1 {
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+
+    .caregiversCTA p {
+        font-size: 0.8rem;
+        margin: 0px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:867px){
+    .know-more-about-img>img{
+        width: auto;
+        height: 160px;
+        object-fit: fill;
+    }
+}
+
+@media screen and (max-width:700px){
+    .video-container>div h1{
+        font-size: 1.5rem;
+    }
+
+    .video-container>div p{
+        font-size: 0.9rem;
+    }
+    .know-more-about-con>h1{
+        font-size: 1.15rem;
+    }
+    .know-more-about{
+        flex-direction: column-reverse;
+    }
+    .know-more-about-img>img{
+        width: 100%;
+        height: auto;
+        object-fit: fill;
+    }
+    .know-more-about>div h1{
+        font-size: 1.05rem;
+    }
+}

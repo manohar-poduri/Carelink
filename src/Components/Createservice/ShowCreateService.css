@@ -1,0 +1,212 @@
+/* show-services-con-inactive */
+.show-services-con-inactive{
+    filter: blur(10px);
+    pointer-events:none;
+    user-select:none
+}
+
+.show-created-servies-banner{
+    min-height: 450px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../Assets/showcreatedservices.jpg');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show-created-servies-banner>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+}
+.show-created-servies-banner>div h1{
+    color: rgb(255, 187, 0);
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.show-created-servies-banner>div h3 span{
+    color: rgb(255, 187, 0);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.show-created-servies-banner>div h3 span:hover{
+    color:blue;
+}
+
+
+.show-services-con{
+    min-height: 50vh;
+    background-color: #efefef;
+}
+
+.allservices-cancel-button>button{
+    padding: 7px 14px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.show-services-divs-one{
+    background-color: transparent;
+    width: 100%;
+}
+
+.show-services-after{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 30px;
+}
+
+.show-services-after>h1{
+    font-weight: 700;
+    font-size: 1.5rem;
+    
+}
+/* delete-create-serve-active */
+.delete-create-serve-inactive,.delete-create-serve-active{
+    width: 600px;
+    min-height: fit-content;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: white;
+    transition: all 0.4s ease;
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 5px;
+}
+.delete-create-serve-inactive>h1,.delete-create-serve-active>h1{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.delete-create-serve-active{
+    opacity: 1;
+    visibility:visible;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.delete-create-serve-inactive{
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.delete-create-serve-inactive>div,.delete-create-serve-active>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.delete-create-serve-inactive>div button,.delete-create-serve-active>div button{
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: white;
+    padding: 3px 18px;
+    border: none;
+    border-radius: 3px;
+}
+.deleteserv-yes-btn{
+    background-color: rgb(8, 163, 8);
+    cursor:pointer;
+}
+.deleteserv-yes-no{
+    background-color: red;
+    cursor: pointer;
+}
+/* sc-ser-acceptedby-profile */
+.sc-ser-acceptedby-profile{
+    border: 1px solid rgb(2, 204, 2);
+    margin-top: 5px;
+    border-radius: 5px;
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+}
+.sc-ser-acceptedby-profile>h1{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: green;
+    padding: 5px;
+}
+.sc-ser-aptd-pro-div1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+.sc-ser-aptd-pro-div1>div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.sc-ser-aptd-pro-div1>div h1{
+    font-size: 0.99rem;
+    font-weight: 600;
+}
+.sc-ser-aptd-pro-div1>div p{
+    font-size: 0.81rem;
+    color: gray;
+}
+.sc-ser-aptd-pro-div2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sc-ser-aptd-pro-div2>div{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sc-ser-aptd-pro-div2>div p{
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: gray;
+}
+.sc-ser-aptd-pro-div2>div p span{
+    font-weight: 600;
+    color: black;
+}
+.sc-ser-aptd-pro-div2>button{
+    border: none;
+    font-size: 0.9rem;
+    color: white;
+    background-color:blue;
+    cursor: pointer;
+    padding: 5px 18px;
+    border-radius: 5px;
+}
+
+
+
+@media screen and (max-width:610px) {
+    .delete-create-serve-inactive,.delete-create-serve-active{
+        width: 95%;
+    }
+}
