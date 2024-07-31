@@ -1,0 +1,363 @@
+.createcommunity-banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./Images/blog-listing-TechnologyInAging.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.createcommunity-banner>div h1{
+    width: 75%;
+    font-size: 2.3rem;
+    font-weight: 800;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.createcommunity-banner>div p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.createcommunity-banner>div button{
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: rgb(85, 116, 255);
+    cursor: pointer;
+}
+.createcommunity-header{
+    background-color: #efefef;
+}
+.createcommunity-header>h1{
+    text-align: center;
+    color: darkslateblue;
+    padding: 30px;
+    font-size: 1.5rem;
+}
+
+/* message box */
+.created-community-posts{
+    background-color: #efefef;
+    padding-left: 30px;
+}
+.created-community-posts{
+    display: flex;
+    flex-direction: row;
+}
+.left-container{
+    width: 100%;
+    background-color: white;
+    height: fit-content;
+    border-radius: 10px;
+}
+.right-container {
+    width: 350px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.message-box {
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.message-text {
+    background-color: #fff;
+    border-radius: 20px 20px 0px 20px;
+    padding: 10px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    align-self: flex-start;
+}
+
+.message-box:nth-child(1) .message-text {
+    background-color: #e6f2ff;
+}
+
+.message-box:nth-child(2) .message-text {
+    background-color: #fff2e6;
+}
+
+.message-box:nth-child(3) .message-text {
+    background-color: #e6ffee;
+}
+
+.message-box:nth-child(4) .message-text {
+    background-color: #ffe6e6;
+}
+
+.message-box:nth-child(5) .message-text {
+    background-color: #f2f2ff;
+}
+
+.create-add-post-popup-active{
+    position:fixed;
+    top: 50%;
+    width:650px;
+    min-height: 150px;
+    background-color: white;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.4s ease;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.create-add-post-popup-inactive{
+    position: fixed;
+    width:650px;
+    min-height: 150px;
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    top:40%;
+    left:50%;
+    transition: all 0.4s ease;
+    transform: translate(-50%,-50%);
+}
+/* create-community-page */
+.create-community-page-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+
+.create-community-page-div p{
+    text-align: right;
+    padding: 5px 10px;
+    background-color: rgb(241, 241, 241);
+    border-radius: 50%;
+    width: fit-content;
+    cursor: pointer;
+}
+
+/* create-community-page-form */
+.create-community-page-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+.create-community-page-form>div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.create-community-page-form>div label{
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.create-community-page-form>div input{
+    height: 35px;
+    border: 1px solid rgb(216, 216, 216);
+    outline: none;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.create-community-page-form>div select{
+    height: 35px;
+    border: 1px solid rgb(216, 216, 216);
+    outline: none;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.create-community-page-form>div textarea{
+    min-height: 150px;
+    border: 1px solid rgb(216, 216, 216);
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.create-community-page-form>button{
+    width: 100%;
+    min-height: 40px;
+    text-align: center;
+    border: none;
+    font-weight:500;
+    color: white;
+    background-color: blue;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+}
+.create-community-page-form>button:hover{
+    background-color: rgb(0, 0, 160);
+    cursor: pointer;
+
+}
+
+/* all-post-created-posts */
+.all-post-created-posts{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* community-dreated-page-leftcon */
+.community-dreated-page-leftcon>h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+/* createcommunity-each-post-head */
+.createcommunity-each-post-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.createcommunity-each-post-head>div{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+}
+
+.createcommunity-each-post-head>div h1{
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+.createcommunity-each-post-head>div p{
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: gray;
+}
+/* createcommunity-each-post-des */
+.createcommunity-each-post-des{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-top: 5px;
+}
+.createcommunity-each-post-des>h1{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.createcommunity-each-post-des>p{
+    font-size: 0.9rem;
+    color: gray;
+}
+.createcommunity-each-post-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.createcommunity-each-post-buttons>div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.createcommunity-each-post-buttons>div p{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.createcommunity-each-post-buttons>button{
+    padding: 5px 14px;
+    color: white;
+    font-weight: 600;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+/* createcommunity-each-post-div */
+.createcommunity-each-post-div{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgba(245, 245, 245, 0.555);
+    /* box-shadow: 0px -1px 8px 2px rgba(237,237,237,1); */
+    border: 1px solid gray;
+}
+.createcommunity-topic-para{
+    margin-top: 10px;
+}
+
+.createcommunity-topic-para>p{
+    color: white;
+    font-weight: 500;
+    font-size: 0.84rem;
+    background-color: rgb(147, 0, 184);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 3px 10px;
+    width: fit-content;
+}
+
+@media screen and (max-width:1000px){
+    .left-container{
+        margin-right: 30px;
+    }
+    .right-container{
+        display: none;
+    }
+}
+
+@media all and (max-width:700px){
+    .create-add-post-popup-active{
+        width: 90%;
+    }
+    .create-add-post-popup-inactive{
+        width:90%;
+    }
+}
+
+
