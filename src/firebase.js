@@ -5,13 +5,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import {getStorage} from 'firebase/storage';
 const firebaseConfig = {
-  apiKey: "AIzaSyBdyRVDYXtiZuD5PgOFnS3c2GGbcKbIn5E",
-  authDomain: "goldenage-15a00.firebaseapp.com",
-  projectId: "goldenage-15a00",
-  storageBucket: "goldenage-15a00.appspot.com",
-  messagingSenderId: "68415669270",
-  appId: "1:68415669270:web:4906b21f9fc3a78088e137",
-  measurementId: "G-CSZE3JSV18"
+  apiKey: "AIzaSyCrRNmOFeBAVGTZaVAbmcYkFFhEquctA40",
+  authDomain: "carelink-a4fe6.firebaseapp.com",
+  projectId: "carelink-a4fe6",
+  storageBucket: "carelink-a4fe6.appspot.com",
+  messagingSenderId: "266401446231",
+  appId: "1:266401446231:web:8730bb5cd854889f2ce612",
+  measurementId: "G-LV05VMVB7N"
 };
 
 export const app = initializeApp(firebaseConfig);
